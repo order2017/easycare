@@ -1,0 +1,387 @@
+body.login {
+    background: url("../images/admin_login_bg.jpg") no-repeat center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+input, button, select, textarea {
+    outline: none
+}
+
+.full-screen {
+    height: 100%;
+}
+
+textarea {
+    resize: none
+}
+
+.login-html {
+    height: 100%;
+}
+
+.login-box {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -240px 0 0 -160px;
+}
+
+.login-box h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.login-box .logo {
+    background: url("../images/logo.png") no-repeat center;
+    background-size: 160px;
+    height: 60px;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-form .form-group {
+    padding: 3px;
+    background: white;
+    margin-bottom: 15px;
+}
+
+.login-form label {
+    padding: 0 10px;
+}
+
+.login-form i {
+    margin-right: -6px;
+    font-size: 20px;
+}
+
+.login-form input {
+    border: none;
+    border-left: 1px solid #e3e3e3;
+    height: 35px;
+    width: 220px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.login-btn {
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    background: #008cd6;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin: 0 auto;
+    display: block;
+}
+
+.login-btn:disabled {
+    background: #9fa0a0;
+}
+
+.login-error {
+    color: #ff1600;
+    font-size: 14px;
+    padding-bottom: 20px;
+    line-height: 14px;
+    height: 14px;
+}
+
+.login-code {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 20px 10px;
+    line-height: 24px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.lion-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #9fa1a4;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.lion-main {
+    background: #eff2f7;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+    min-width: 1100px;
+}
+
+.lion-sidebar {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 160px;
+    height: calc(100% - 50px);
+    background: #008cd6;
+}
+
+.lion-content {
+    margin-left: 160px;
+    width: calc(100% - 160px);
+    overflow: hidden;
+    position: relative;
+    background: white;
+    padding: 10px;
+}
+
+.lion-content-header {
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.lion-content-header h3 {
+    margin: 5px 0 0 0;
+    border-left: 4px solid #008cd6;
+    padding-left: 10px;
+}
+
+.lion-content-header .am-btn {
+    margin-left: 5px;
+}
+
+.lion-header-logo {
+    font-size: 30px;
+    color: #008cd6;
+    width: 160px;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+    padding-left: 25px;
+    background: url("../images/admin_logo.png") no-repeat left center;
+}
+
+.lion-header-user {
+    float: right;
+    height: 50px;
+    width: 130px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.lion-sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lion-sidebar-menu li {
+    line-height: 40px;
+    font-size: 12px;
+    color: white;
+}
+
+.lion-sidebar-menu li span {
+    padding-left: 10px;
+    display: block;
+    cursor: pointer;
+    background: #008cd6;
+}
+
+.lion-sidebar-menu li span:hover {
+    background: #389bcf;
+}
+
+.lion-sidebar-menu li.current span {
+    background: #005b8b;
+}
+
+.lion-sidebar-menu li span:before {
+    content: "\f0da";
+    display: inline-block;
+    font: normal normal normal 1.6rem/1 FontAwesome, sans-serif;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0, 0);
+    width: 1.25em;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.lion-sidebar-menu li.active span:before {
+    content: "\f0d7";
+}
+
+.lion-sidebar-menu li.active .lion-sidebar-sub-menu {
+    display: block;
+}
+
+.lion-sidebar-sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #1a98da;
+    overflow: hidden;
+    display: none;
+}
+
+.lion-sidebar-sub-menu li {
+    line-height: 40px;
+}
+
+.lion-sidebar-sub-menu li.current {
+    background: #3eb9fa;
+}
+
+.lion-sidebar-sub-menu li.current a:after {
+    content: "\f0d9";
+    color: white;
+    float: right;
+    font-size: 20px;
+}
+
+.lion-sidebar-sub-menu li:hover {
+    background: #5fb7e5;
+}
+
+.lion-sidebar-sub-menu li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    padding-left: 20px;
+}
+
+.lion-sidebar-sub-menu li i {
+    margin-right: 5px;
+}
+
+.lion-sidebar-sub-menu li a:hover, .lion-sidebar-sub-menu li a.active {
+    color: white;
+}
+
+.lion-header-user:after {
+
+}
+
+.am-breadcrumb {
+    margin-bottom: 0;
+}
+
+.am-modal-bd .am-form-group {
+    text-align: left;
+}
+
+.am-table {
+    margin-bottom: 10px;
+}
+
+.am-pagination {
+    margin: 0;
+}
+
+legend {
+    margin-bottom: 0.5rem;
+}
+
+.am-modal-dialog {
+    background: #ffffff;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+
+.admin-upload-box {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.admin-upload-box input {
+    display: none;
+}
+
+.admin-upload-action {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 200px;
+    left: 0;
+    top: 0;
+}
+
+.admin-upload-box.active:hover .admin-upload-action {
+    display: block;
+}
+
+.admin-upload-new {
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.admin-upload-img-box {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: none;
+}
+
+.admin-upload-box.uploading .admin-upload-new {
+    display: none;
+}
+
+.admin-upload-box.active .admin-upload-img-box {
+    display: block;
+}
+
+.admin-upload-new img {
+    max-width: 100%;
+    max-height: 180px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.admin-upload-box .am-progress {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 50%;
+    margin-top: -10px;
+    display: none;
+}
+
+.admin-upload-box.uploading .am-progress {
+    display: block;
+}
+
+.table-image img {
+    max-width: 100px;
+    max-height: 50px;
+}

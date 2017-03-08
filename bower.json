@@ -1,0 +1,17 @@
+{
+  "name": "easycare",
+  "description": "",
+  "main": "",
+  "authors": [
+    "古俊杰 <dggugjj@163.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/lionetech/easycare",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

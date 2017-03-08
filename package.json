@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "gulp --production",
+    "dev": "gulp watch"
+  },
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^5.0.0"
+  },
+  "dependencies": {
+    "amazeui": "^2.7.0",
+    "amazeui-datetimepicker-se": "^1.0.0-beta.1",
+    "jquery": "^2.0.0",
+    "jquery-pjax": "defunkt/jquery-pjax",
+    "moment": "^2.14.1",
+    "normalize.css": "^4.1.1",
+    "select2": "^4.0.3",
+    "toastr": "^2.1.2"
+  }
+}
